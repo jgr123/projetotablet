@@ -1,0 +1,68 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CadastrarProduto" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    <TableRow>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Descrição"/>
+	        <EditText 
+	            android:id="@+id/descricao"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"/>
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Valor Unitário"/>
+	        <EditText 
+	            android:id="@+id/valorunitario"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Quantidade Estoque"/>
+	        <EditText 
+	            android:id="@+id/quantidade"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+	    </TableRow>
+	    <TableRow>
+	        <Button
+	            android:id="@+id/btncadastracontato" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Cadastrar"
+	            android:onClick="cadastrar"/>
+	        <Button 
+	            android:id="@+id/btncancelacontato"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Cancelar"
+	            android:onClick="goToProdutos"/>
+	    </TableRow>
+	</TableLayout>
+
+</RelativeLayout>
+</ScrollView>
